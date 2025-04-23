@@ -16,7 +16,7 @@ model = None
 @app.on_event("startup")
 def load_model():
     global model
-    model_path = "bayesian_network_modeltfem.pkl"
+    model_path = "bn_modelM.pkl"
     print(f"Current working directory: {os.getcwd()}")
     print(f"Attempting to load model from: {model_path}")
     if not os.path.exists(model_path):
